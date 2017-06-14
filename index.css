@@ -1,0 +1,38 @@
+
+body {
+    margin: 0;
+}
+
+img {
+    background-size: cover;
+}
+
+.logo {
+    height: 100px;
+    position: fixed;
+    margin: 20px;
+    margin-left: 580px;
+    margin-top: 200px;
+
+}
+
+input {
+    width: 400px;
+    height: 25px;
+    position: absolute;
+    margin: 0 auto;
+    top: 65%;
+    margin-left: 430px;
+    border: none;
+    border-radius: 20px;
+}
+
+
+.title {
+    color: white;
+    position: absolute;
+    margin: 0 auto;
+    font-size: 30px;
+    text-align: center;
+    top: 55%;
+    width: 100%;
