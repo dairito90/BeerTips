@@ -1,22 +1,35 @@
-
 body {
     margin: 0;
+    padding: 0;
+    background-image: url(images/header3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
-img {
-    background-size: cover;
+.container {
+    display: flex;
+    justify-content: center;
+    position:absolute;
+    margin-top: 250px;
+    margin-left: 300px;
+    width: 100%;
+
 }
 
 .logo {
     height: 100px;
-    position: fixed;
+    position: static;
     margin: 20px;
-    margin-left: 580px;
-    margin-top: 200px;
-
 }
 
-input {
+.beerlife {
+    display:flex;
+    height: 500px;
+}
+
+/*input {
     width: 400px;
     height: 25px;
     position: absolute;
@@ -25,14 +38,104 @@ input {
     margin-left: 430px;
     border: none;
     border-radius: 20px;
+}*/
+.beer {
+    display: flex;
+justify-content: center;
+margin-top: 300px;
 }
+.btn {
+    display: flex;
 
-
+}
 .title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     color: white;
     position: absolute;
     margin: 0 auto;
-    font-size: 30px;
+    margin-left: 10px;
+    font-size: 50px;
     text-align: center;
-    top: 55%;
+    top: 40%;
     width: 100%;
+    transform: translateY(-50%);
+    animation: slide-down-fade-in 1s .5s forwards;
+
+}
+
+
+.nav {
+    display: flex;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+    margin-left: 1000px;
+    margin-top: 60px;
+}
+
+ul {
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 40px;
+}
+
+li {
+    list-style-type: none;
+
+}
+
+.nav li {
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.home-container {
+    display: flex;
+}
+
+
+.link-1 {
+  transition: 0.3s ease;
+
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+
+}
+.link-1:hover {
+  border-top: 4px solid #000000;
+  border-bottom: 4px solid #000000;
+  padding: 6px 0;
+}
+
+
+.start {
+    width: 100px;
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    font-size: 30px;
+    margin-top: 20px;
+    transition: .2s ease-in-out;
+
+
+}
+
+.start:hover {
+    background: white;
+}
+
+
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 1.5em;
+}
