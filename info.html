@@ -11,10 +11,67 @@
 
 <body>
     <div id="map"></div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWdwjCp4ZTn9Y6PB8QxNfdt2iWuOtTSuE&initMap&libraries=places&callback=initialize"
-    async defer></script>
 
+
+    <div class="actions">
+
+        <div class="button">
+
+            <label for="where">Where:</label>
+            <input id="where" type="text" name="where" /></div>
+
+        <div id="button2" class="button" onclick="findAddress(); return false;">Search by address</div>
+
+        <div class="button">
+
+            <label for="keyword">Keyword (optional):</label>
+            <input id="keyword" type="text" name="keyword" /></div>
+
+        <div class="button">
+
+            <label for="type">Type:</label>
+            <select id="type">
+
+<option value="bar">bar</option>
+
+<option value="brewery">brewery</option>
+
+</select>
+        </div>
+
+        <div class="button">
+
+            <label for="radius">Radius:</label>
+            <select id="radius">
+
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+<option value="30">30</option>
+<option value="50">50</option>
+<option value="100">100</option>
+<option value="150">150</option>
+<option value="200">200</option>
+<option value="250">250</option>
+
+
+
+</select>
+
+        </div>
+
+        <input type="hidden" id="lat" name="lat" value="27.994402" />
+
+        <input type="hidden" id="lng" name="lng" value="-81.760254" />
+
+        <div id="button1" class="button" onclick="findPlaces(); return false;">Search</div>
+
+    </div>
+
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyD6d-9ayjQrajeGlogDJNkmG-d7GrK2MNs&libraries=places"></script>
 
     <script src="js/main.js"></script>
 </body>
