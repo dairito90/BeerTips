@@ -5,16 +5,16 @@
 }
 
 #map {
-    height: 500px;
+    height: 700px;
     position: relative;
-    width: 800px;
+    width: 700px;
 }
 
 .actions {
     background-color: #FFFFFF;
     bottom: 150px;
-    padding: 20px;
-    position: absolute;
+    padding: 15px;
+    position: fixed;
     right: 150px;
     z-index: 2;
     border-top: 1px solid #abbbcc;
