@@ -1,507 +1,590 @@
-        @keyframes slide-down-fade-in {
-    0% {
-        transform: translateY(-30px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-
-
-@keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-
-}
-
-
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
-ol, ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after, q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-.txt-rt {
-    text-align: right;
-}
-
-.txt-lt {
-    text-align: left;
-}
-
-.txt-center {
-    text-align: center;
-}
-
-.float-rt {
-    float: right;
-}
-
-.float-lt {
-    float: left;
-}
-
-.clear {
-    clear: both;
-}
-
-.underline {
-    padding-bottom: 5px;
-    border-bottom: 1px solid #eee;
-    margin: 0 0 20px 0;
-}
-
-nav.vertical ul li {
-    display: block;
-}
-
-nav.horizontal ul li {
-    display: inline-block;
-}
-
-img {
-    max-width: 100%;
-}
-
-body {
-    background: #ffffff;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 100%;
-}
-
-.wrap {
-    margin: 0 auto;
-    width: 80%;
-}
-
-.banner {
-    background: url(../images/beachbeer.jpg);
-    background-size: cover;
-    padding: 4em 0em 11em 0em;
-}
-
-#be {
-    color: #000000;
-    font-size: 3.5em;
-    text-shadow: 1px 1px #fff;
-    font-family: 'Gloria Hallelujah', cursive;
-    animation: slide-down-fade-in 1s 0.5s forwards;
-}
-
-
-
-.logo {
-    text-align: center;
-    margin: 0 auto;
-    margin-bottom: 50px;
-    width: 15%;
-}
-
-#pour {
-    height: 400px;
-    border-radius: 20px;
-}
-
-.logo a {
-    display: block;
-}
-
-.banner p {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 3em;
-    text-align: center;
-    padding: 1em 0em 2em 0em;
-}
-
-.banner p span {
-    font-weight: 900;
-    margin-left: 10px;
-    font-size: 1.03em;
-}
-
-.searching {
-    margin-top: -40px;
-}
-
-.beer {
-    font-size: 1.1em;
-}
-
-.beer .beer {
-    font-size: 1em;
-}
-
-.beer input, .beer select, .beer textarea, {
-    font-size: 1em;
-}
-
-.beer-content {
-    border: 1px solid #aaaaaa;
-    background: #fff;
-    color: #222222;
-}
-
-.beer-content a {
-    color: #222222;
-}
-
-.beer-header {
-    border: 1px solid #aaaaaa;
-    background: #cccccc;
-    color: #222222;
-    font-weight: bold;
-}
-
-.beer-header a {
-    color: #222222;
-}
-
-.beer {
-    border: 1px solid #E4E4E4;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    padding: 5px 10px;
-    cursor: pointer;
-    margin: 0em 2em;
-}
-
-.beer input[type="text"] {
-    border: none;
-    outline: none;
-    background: none;
-    font-size: 0.95em;
-    color: #938E8E;
-    width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    -webkit-appearance: none;
-    padding: 0.4em 0em;
-    font-size: 1.4em;
-}
-
-.main {
-    position: relative;
-    background: #fff;
-    width: 360px;
-    margin: 0 auto;
-    padding: 1em 5em;
-    border-radius: 10px;
-    -webkit-border-radius: 3px;
-    -o-border-radius: 3px;
-    -moz-border-radius: 3px;
-    box-shadow: 1px 1px 1px 1px #5E5E5E;
-}
-
-.images {
-    display: block;
-    padding: 1.5em 0em;
-}
-
-.images li {
-    float: left;
-}
-
-.images li a {
-    display: block;
-}
-
-.images li a img {
-    display: block;
-}
-
-.searching p {
-    color: #938E8E;
-    font-size: 1em;
-    font-weight: bold;
-    text-align: center;
-    padding: 0em 1em;
-    line-height: 1.8em;
-}
-
-.button {
-    margin: 2em 0em;
-    text-align: center;
-
-}
-
-.button a {
-    font-size: 1.55em;
-    font-family: 'Gloria Hallelujah', cursive;
-    padding: 0.2em 1.6em;
-    text-shadow: 0px 0px 1px #FFF;
-    color: #000000;
-    background: #FFA500;
-    text-transform: uppercase;
-    border-radius: 20px;
-}
-
-.button a:hover {
-    background: #FF8C00;
-
-
-}
-
-.grids {
-    padding: 5em 0em;
-}
-
-.find {
-    width: 80%;
-    float: left;
-}
-
-.find img {
-    float: left;
-}
-
-.find .desc {
-    float: left;
-    width: 50%;
-    padding: 0.6em 1em;
-}
-
-.find h3 {
-    color: #000000;
-    font-size: 1.6em;
-    padding: 1em 0em;
-    font-weight: 600;
-    text-align: center;
-}
-
-.find p {
-    color: #4F4E4E;
-    font-size: 1.5em;
-    padding: 0.6em 0em;
-    line-height: 1.7em;
-    text-align: center;
-}
-
-#letters {
-    float: left;
-}
-
-.find1 {
-    width: 80%;
-    float: right;
-}
-
-.find1 img {
-    float: right;
-}
-
-.find1 .desc {
-    float: right;
-    width: 50%;
-    padding: 0.6em 1em;
-}
-
-.find1 h3 {
-    color: #000000;
-    font-size: 1.6em;
-    padding: 1em 0em;
-    font-weight: 600;
-    text-align: center;
-}
-
-.find1 p {
-    color: #4F4E4E;
-    font-size: 1.5em;
-    padding: 0.6em 0em;
-    line-height: 1.7em;
-    text-align: center;
-}
-
-@media only screen and (max-width:1366px) {
-    .wrap {
-        width: 85%;
-    }
-    .find .desc {
-        width: 65%;
-    }
-    @media only screen and (max-width:1280px) {
-        .banner p {
-            font-size: 2.7em;
-        }
-        .logo {
-            width: 22%;
-        }
-    }
-    @media only screen and (max-width:1024px) {
-        .logo {
-            width: 24%;
-        }
-        .banner {
-            padding: 3em 0em 11em 0em;
-        }
-        .banner p {
-            font-size: 2.3em;
-            padding: 1em 0em 1.8em 0em;
-        }
-        .find .desc {
-            width: 56%;
-        }
-        .find h3 {
-            font-size: 1.4em;
-        }
-    }
-    @media only screen and (max-width:768px) {
-        .logo {
-            width: 28%;
-        }
-        .wrap {
-            width: 90%;
-        }
-        .banner {
-            padding: 2em 0em 11em 0em;
-        }
-        .banner p {
-            font-size: 2em;
-        }
-        .beer input[type="text"] {
-            font-size: 1.2em;
-        }
-        .grids {
-            padding: 2.5em 0em;
-        }
-        .find {
-            width: 100%;
-            float: none;
-            text-align: center;
-        }
-        .find img {
-            float: none;
-        }
-        .find .desc {
-            float: none;
-            width: 100%;
-            padding: 0.6em 0em;
-            text-align: center;
-        }
-        .brows_button_3 a, .brows_button_4 a {
-            font-size: 1.3em;
-        }
-        .shadow {
-            text-align: center;
-            width: 60%;
-        }
-        .desc-1 {
-            margin-top: -14em;
-        }
-        .shadow>img {
-            margin-right: 11em;
-        }
-        @media only screen and (max-width:640px) {
-            .logo {
-                width: 32%;
-            }
-            .banner p {
-                font-size: 1.5em;
-                padding: 1em 0em 2.2em 0em;
-            }
-            .beer input[type="text"] {
-                font-size: 1em;
-                border-color: #000000;
-            }
-            .images>ul>li:nth-child(8), .images>ul>li:nth-child(7) {
-                display: none;
-            }
-            .main {
-                width: 288px;
-            }
-        }
-        @media only screen and (max-width:480px) {
-            .logo {
-                width: 32%;
-            }
-        }
-        @media only screen and (max-width:320px) {
-            .logo {
-                width: 40%;
-            }
-            .banner {
-                padding: 1em 0em 11em 0em;
-            }
-            .banner p {
-                font-size: 1.5em;
-                padding: 0.6em 0em 2.8em 0em;
-            }
-            .shadow {
-                text-align: center;
-                width: 63%;
-            }
-            .desc-1 {
-                margin-top: -5em;
-            }
-            .banner p {
-                font-size: 1.1em;
-            }
-            .main {
-                width: 216px;
-            }
-            .beer input[type="text"] {
-                font-size: 0.8em;
-                padding: 0.2em 0em;
-            }
-            .beer {
-                margin: 0em 1em;
-            }
-            .searching p {
-                font-size: 1em;
-                padding: 0em 0.5em;
-            }
-            .images>ul>li:nth-child(10), .images>ul>li:nth-child(9) {
-                display: none;
-            }
-            .images {
-                padding: 0.8em 0em;
-            }
-        }
+                                                        @keyframes slide-down-fade-in {
+                                                    0% {
+                                                        transform: translateY(-30px);
+                                                        opacity: 0;
+                                                    }
+                                                    100% {
+                                                        transform: translateY(0);
+                                                        opacity: 1;
+                                                    }
+                                                }
+
+                                                @keyframes slidy {
+                                                    0% {
+                                                        left: 0%;
+                                                    }
+                                                    20% {
+                                                        left: 0%;
+                                                    }
+                                                    25% {
+                                                        left: -100%;
+                                                    }
+                                                    45% {
+                                                        left: -100%;
+                                                    }
+                                                    50% {
+                                                        left: -200%;
+                                                    }
+                                                    70% {
+                                                        left: -200%;
+                                                    }
+                                                    75% {
+                                                        left: -300%;
+                                                    }
+                                                    95% {
+                                                        left: -300%;
+                                                    }
+                                                    100% {
+                                                        left: -400%;
+                                                    }
+                                                }
+
+                                                @keyframes bounce {
+                                                    0%, 20%, 60%, 100% {
+                                                        -webkit-transform: translateY(0);
+                                                        transform: translateY(0);
+                                                    }
+                                                    40% {
+                                                        -webkit-transform: translateY(-20px);
+                                                        transform: translateY(-20px);
+                                                    }
+                                                    80% {
+                                                        -webkit-transform: translateY(-10px);
+                                                        transform: translateY(-10px);
+                                                    }
+                                                }
+
+                                                html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, dl, dt, dd, ol, nav ul, nav li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    border: 0;
+                                                    font-size: 100%;
+                                                    font: inherit;
+                                                    vertical-align: baseline;
+                                                }
+
+                                                article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+                                                    display: block;
+                                                }
+
+                                                ol, ul {
+                                                    list-style: none;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                }
+
+                                                blockquote, q {
+                                                    quotes: none;
+                                                }
+
+                                                blockquote:before, blockquote:after, q:before, q:after {
+                                                    content: '';
+                                                    content: none;
+                                                }
+
+                                                table {
+                                                    border-collapse: collapse;
+                                                    border-spacing: 0;
+                                                }
+
+                                                a {
+                                                    text-decoration: none;
+                                                }
+
+                                                .txt-rt {
+                                                    text-align: right;
+                                                }
+
+                                                .txt-lt {
+                                                    text-align: left;
+                                                }
+
+                                                .txt-center {
+                                                    text-align: center;
+                                                }
+
+                                                .float-rt {
+                                                    float: right;
+                                                }
+
+                                                .float-lt {
+                                                    float: left;
+                                                }
+
+                                                .clear {
+                                                    clear: both;
+                                                }
+
+                                                .underline {
+                                                    padding-bottom: 5px;
+                                                    border-bottom: 1px solid #eee;
+                                                    margin: 0 0 20px 0;
+                                                }
+
+                                                nav.vertical ul li {
+                                                    display: block;
+                                                }
+
+                                                nav.horizontal ul li {
+                                                    display: inline-block;
+                                                }
+
+                                                .awesome-beer {
+                                                    background: url(../images/p.jpg)no-repeat 0px 0px;
+                                                    margin: 0 auto;
+                                                    margin-bottom: 50px;
+                                                    text-align: center;
+                                                    position: relative;
+                                                    background-size: cover;
+                                                    background-attachment: fixed;
+                                                }
+
+                                                div#slider {
+                                                    overflow: hidden;
+                                                }
+
+                                                div#slider figure img {
+                                                    width: 20%;
+                                                    float: left;
+                                                }
+
+                                                div#slider figure {
+                                                    position: relative;
+                                                    width: 500%;
+                                                    margin: 0;
+                                                    left: 0;
+                                                    text-align: left;
+                                                    font-size: 0;
+                                                    animation: 30s slidy infinite;
+                                                }
+
+                                                div#slider2 {
+                                                    overflow: hidden;
+                                                }
+
+                                                div#slider2 figure img {
+                                                    width: 20%;
+                                                    float: left;
+                                                }
+
+                                                div#slider2 figure {
+                                                    position: relative;
+                                                    width: 500%;
+                                                    margin: 0;
+                                                    left: 0;
+                                                    text-align: left;
+                                                    font-size: 0;
+                                                    animation: 50s slidy infinite;
+                                                }
+
+                                                .top10 {
+                                                    text-align: center;
+                                                    font-size: 4em;
+                                                    margin: 20px;
+                                                }
+
+                                                h2 {
+                                                    position: absolute;
+                                                    top: 200px;
+                                                    left: 0;
+                                                    width: 100%;
+                                                }
+
+                                                img {
+                                                    max-width: 100%;
+                                                }
+
+                                                body {
+                                                    background: #ffffff;
+                                                    font-family: 'Open Sans', sans-serif;
+                                                    font-size: 100%;
+                                                }
+
+                                                .wrap {
+                                                    margin: 0 auto;
+                                                    margin-bottom: 50px;
+                                                    width: 80%;
+                                                }
+
+                                                .banner {
+                                                    background: url(../images/beachbeer.jpg);
+                                                    background-size: cover;
+                                                    padding: 4em 0em 11em 0em;
+                                                }
+
+                                                #be {
+                                                    color: #000000;
+                                                    font-size: 3.5em;
+                                                    text-shadow: 1px 1px #fff;
+                                                    font-family: 'Gloria Hallelujah', cursive;
+                                                    animation: slide-down-fade-in 1s 0.5s forwards;
+                                                }
+
+                                                .logo {
+                                                    text-align: center;
+                                                    margin: 0 auto;
+                                                    margin-bottom: 50px;
+                                                    width: 15%;
+                                                }
+
+                                                #pour {
+                                                    height: 400px;
+                                                    border-radius: 20px;
+                                                }
+
+                                                .logo a {
+                                                    display: block;
+                                                }
+
+                                                .banner p {
+                                                    color: #fff;
+                                                    text-transform: uppercase;
+                                                    font-size: 3em;
+                                                    text-align: center;
+                                                    padding: 1em 0em 2em 0em;
+                                                }
+
+                                                .banner p span {
+                                                    font-weight: 900;
+                                                    margin-left: 10px;
+                                                    font-size: 1.03em;
+                                                }
+
+                                                .searching {
+                                                    margin-top: -80px;
+                                                }
+
+                                                .beer {
+                                                    font-size: 1.1em;
+                                                }
+
+                                                .beer .beer {
+                                                    font-size: 1em;
+                                                }
+
+                                                .beer input, .beer select, .beer textarea, {
+                                                    font-size: 1em;
+                                                }
+
+                                                .beer-content {
+                                                    border: 1px solid #aaaaaa;
+                                                    background: #fff;
+                                                    color: #222222;
+                                                }
+
+                                                .beer-content a {
+                                                    color: #222222;
+                                                }
+
+                                                .beer-header {
+                                                    border: 1px solid #aaaaaa;
+                                                    background: #cccccc;
+                                                    color: #222222;
+                                                    font-weight: bold;
+                                                }
+
+                                                .beer-header a {
+                                                    color: #222222;
+                                                }
+
+                                                .beer {
+                                                    border: 1px solid #E4E4E4;
+                                                    -webkit-transition: all 0.3s ease;
+                                                    -moz-transition: all 0.3s ease;
+                                                    -o-transition: all 0.3s ease;
+                                                    transition: all 0.3s ease;
+                                                    padding: 5px 10px;
+                                                    cursor: pointer;
+                                                    margin: 0em 2em;
+                                                }
+
+                                                .beer input[type="text"] {
+                                                    border: none;
+                                                    outline: none;
+                                                    background: none;
+                                                    font-size: 0.95em;
+                                                    color: #938E8E;
+                                                    width: 100%;
+                                                    font-family: 'Open Sans', sans-serif;
+                                                    -webkit-appearance: none;
+                                                    padding: 0.4em 0em;
+                                                    font-size: 1.4em;
+                                                }
+
+                                                .main {
+                                                    position: relative;
+                                                    background: #fff;
+                                                    width: 360px;
+                                                    margin: 0 auto;
+                                                    padding: 1em 5em;
+                                                    border-radius: 10px;
+                                                    -webkit-border-radius: 3px;
+                                                    -o-border-radius: 3px;
+                                                    -moz-border-radius: 3px;
+                                                    box-shadow: 1px 1px 1px 1px #5E5E5E;
+                                                }
+
+                                                .images {
+                                                    display: block;
+                                                    padding: 1.5em 0em;
+                                                }
+
+                                                .images li {
+                                                    float: left;
+                                                }
+
+                                                .images li a {
+                                                    display: block;
+                                                }
+
+                                                .images li a img {
+                                                    display: block;
+                                                }
+
+                                                .searching p {
+                                                    color: #938E8E;
+                                                    font-size: 1em;
+                                                    font-weight: bold;
+                                                    text-align: center;
+                                                    padding: 0em 1em;
+                                                    line-height: 1.8em;
+                                                }
+
+                                                .button {
+                                                    margin: 2em 0em;
+                                                    text-align: center;
+                                                }
+
+                                                .button a {
+                                                    font-size: 1.55em;
+                                                    font-family: 'Gloria Hallelujah', cursive;
+                                                    padding: 0.2em 1.6em;
+                                                    text-shadow: 0px 0px 1px #FFF;
+                                                    color: #000000;
+                                                    background: #FFA500;
+                                                    text-transform: uppercase;
+                                                    border-radius: 20px;
+                                                }
+
+                                                .button a:hover {
+                                                    background: #FF8C00;
+                                                }
+
+                                                .grids {
+                                                    padding: 5em 0em;
+                                                }
+
+                                                .find {
+                                                    width: 80%;
+                                                    float: left;
+                                                }
+
+                                                .find img {
+                                                    float: left;
+                                                }
+
+                                                .find .desc {
+                                                    float: left;
+                                                    width: 50%;
+                                                    padding: 0.6em 1em;
+                                                }
+
+                                                .find h3 {
+                                                    color: #000000;
+                                                    font-size: 1.6em;
+                                                    padding: 1em 0em;
+                                                    font-weight: 600;
+                                                    text-align: center;
+                                                }
+
+                                                .find p {
+                                                    color: #4F4E4E;
+                                                    font-size: 1.5em;
+                                                    padding: 0.6em 0em;
+                                                    line-height: 1.7em;
+                                                    text-align: center;
+                                                }
+
+                                                #letters {
+                                                    float: left;
+                                                }
+
+                                                .find1 {
+                                                    width: 80%;
+                                                    float: right;
+                                                    position: relative;
+                                                    top: 0;
+                                                    left: 0;
+                                                }
+
+                                                .find1 img {
+                                                    float: right;
+                                                }
+
+                                                .find1 .desc {
+                                                    float: right;
+                                                    width: 50%;
+                                                    padding: 0.6em 1em;
+                                                }
+
+                                                .find1 h3 {
+                                                    color: #000000;
+                                                    font-size: 1.6em;
+                                                    padding: 1em 0em;
+                                                    font-weight: 600;
+                                                    text-align: center;
+                                                }
+
+                                                .find1 p {
+                                                    color: #4F4E4E;
+                                                    font-size: 1.5em;
+                                                    padding: 0.6em 0em;
+                                                    line-height: 1.7em;
+                                                    text-align: center;
+                                                }
+
+                                                @media only screen and (max-width:1366px) {
+                                                    .wrap {
+                                                        width: 85%;
+                                                    }
+                                                    .find .desc {
+                                                        width: 65%;
+                                                    }
+                                                    @media only screen and (max-width:1280px) {
+                                                        .banner p {
+                                                            font-size: 2.7em;
+                                                        }
+                                                        .logo {
+                                                            width: 22%;
+                                                        }
+                                                    }
+                                                    @media only screen and (max-width:1024px) {
+                                                        .logo {
+                                                            width: 24%;
+                                                        }
+                                                        .banner {
+                                                            padding: 3em 0em 11em 0em;
+                                                        }
+                                                        .banner p {
+                                                            font-size: 2.3em;
+                                                            padding: 1em 0em 1.8em 0em;
+                                                        }
+                                                        .find .desc {
+                                                            width: 56%;
+                                                        }
+                                                        .find h3 {
+                                                            font-size: 1.4em;
+                                                        }
+                                                    }
+                                                    @media only screen and (max-width:768px) {
+                                                        .logo {
+                                                            width: 28%;
+                                                        }
+                                                        .wrap {
+                                                            width: 90%;
+                                                        }
+                                                        .banner {
+                                                            padding: 2em 0em 11em 0em;
+                                                        }
+                                                        .banner p {
+                                                            font-size: 2em;
+                                                        }
+                                                        .beer input[type="text"] {
+                                                            font-size: 1.2em;
+                                                        }
+                                                        .grids {
+                                                            padding: 2.5em 0em;
+                                                        }
+                                                        .find {
+                                                            width: 100%;
+                                                            float: none;
+                                                            text-align: center;
+                                                        }
+                                                        .find img {
+                                                            float: none;
+                                                        }
+                                                        .find .desc {
+                                                            float: none;
+                                                            width: 100%;
+                                                            padding: 0.6em 0em;
+                                                            text-align: center;
+                                                        }
+                                                        .brows_button_3 a, .brows_button_4 a {
+                                                            font-size: 1.3em;
+                                                        }
+                                                        .shadow {
+                                                            text-align: center;
+                                                            width: 60%;
+                                                        }
+                                                        .desc-1 {
+                                                            margin-top: -14em;
+                                                        }
+                                                        .shadow>img {
+                                                            margin-right: 11em;
+                                                        }
+                                                        @media only screen and (max-width:640px) {
+                                                            .logo {
+                                                                width: 32%;
+                                                            }
+                                                            .banner p {
+                                                                font-size: 1.5em;
+                                                                padding: 1em 0em 2.2em 0em;
+                                                            }
+                                                            .beer input[type="text"] {
+                                                                font-size: 1em;
+                                                                border-color: #000000;
+                                                            }
+                                                            .images>ul>li:nth-child(8), .images>ul>li:nth-child(7) {
+                                                                display: none;
+                                                            }
+                                                            .main {
+                                                                width: 288px;
+                                                            }
+                                                        }
+                                                        @media only screen and (max-width:480px) {
+                                                            .logo {
+                                                                width: 32%;
+                                                            }
+                                                        }
+                                                        @media only screen and (max-width:320px) {
+                                                            .logo {
+                                                                width: 40%;
+                                                            }
+                                                            .banner {
+                                                                padding: 1em 0em 11em 0em;
+                                                            }
+                                                            .banner p {
+                                                                font-size: 1.5em;
+                                                                padding: 0.6em 0em 2.8em 0em;
+                                                            }
+                                                            .shadow {
+                                                                text-align: center;
+                                                                width: 63%;
+                                                            }
+                                                            .desc-1 {
+                                                                margin-top: -5em;
+                                                            }
+                                                            .banner p {
+                                                                font-size: 1.1em;
+                                                            }
+                                                            .main {
+                                                                width: 216px;
+                                                            }
+                                                            .beer input[type="text"] {
+                                                                font-size: 0.8em;
+                                                                padding: 0.2em 0em;
+                                                            }
+                                                            .beer {
+                                                                margin: 0em 1em;
+                                                            }
+                                                            .searching p {
+                                                                font-size: 1em;
+                                                                padding: 0em 0.5em;
+                                                            }
+                                                            .images>ul>li:nth-child(10), .images>ul>li:nth-child(9) {
+                                                                display: none;
+                                                            }
+                                                            .images {
+                                                                padding: 0.8em 0em;
+                                                            }
+                                                        }
