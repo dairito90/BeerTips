@@ -123,31 +123,35 @@
 
                                                                                                                                                                                 #navbar ul {
                                                                                                                                                                                     margin: 30px;
-                                                                                                                                                                                    ;
+                                                                                                                                                                                    font-family: 'Fresca', sans-serif;
                                                                                                                                                                                     padding: 5px;
                                                                                                                                                                                     list-style-type: none;
                                                                                                                                                                                     text-align: center;
                                                                                                                                                                                     position: absolute;
+
+
                                                                                                                                                                                 }
 
                                                                                                                                                                                 #navbar ul li {
                                                                                                                                                                                     display: inline;
                                                                                                                                                                                     font-size: 1.5em;
+
                                                                                                                                                                                 }
 
                                                                                                                                                                                 #navbar ul li a {
                                                                                                                                                                                     text-decoration: none;
                                                                                                                                                                                     padding: .2em 1em;
                                                                                                                                                                                     color: #000;
+
                                                                                                                                                                                 }
 
                                                                                                                                                                                 #navbar ul li a:hover {
-                                                                                                                                                                                    color: #fff;
+                                                                                                                                                                                    
                                                                                                                                                                                 }
 
                                                                                                                                                                                 .parallax {
                                                                                                                                                                                     background-image: url("../images/beerbar.jpg");
-                                                                                                                                                                                    height: 800px;
+                                                                                                                                                                                    height: 500px;
                                                                                                                                                                                     background-attachment: fixed;
                                                                                                                                                                                     background-position: center;
                                                                                                                                                                                     background-repeat: no-repeat;
@@ -169,10 +173,29 @@
                                                                                                                                                                                     font-size: 5em;
                                                                                                                                                                                     border-top: 2px solid #fff;
                                                                                                                                                                                     border-bottom: 2px solid #fff;
+                                                                                                                                                                                    font-family: 'Josefin Sans', sans-serif;
+                                                                                                                                                                                    text-shadow: 2px 2px #000;
                                                                                                                                                                                 }
 
                                                                                                                                                                                 .parallaxp {
-
+                                                                                                                                                                                    font-size: 48px;
+                                                                                                                                                                                      line-height: 48px;
+                                                                                                                                                                                      text-align: center;
+                                                                                                                                                                                      margin-top:200px;
+                                                                                                                                                                                      color: #fff;
+                                                                                                                                                                                      font-family: 'Fresca', sans-serif;
+                                                                                                                                                                                      text-shadow: 1px 1px  #000;
+                                                                                                                                                                                }
+                                                                                                                                                                                .about,.contact2 {
+                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                    justify-content: center;
+                                                                                                                                                                                    font-size: 48px;
+                                                                                                                                                                                    font-family: 'Josefin Sans', sans-serif;
+                                                                                                                                                                                    letter-spacing: .3em;
+                                                                                                                                                                                    animation: slide-down-fade-in 1s 1s forwards;
+                                                                                                                                                                                }
+                                                                                                                                                                                .contact2 {
+                                                                                                                                                                                    margin-top:80px;
                                                                                                                                                                                 }
 
                                                                                                                                                                                 .wrapper {
@@ -185,11 +208,12 @@
                                                                                                                                                                                     padding: 30px 0 30px 0;
                                                                                                                                                                                     color: #000;
                                                                                                                                                                                     text-align: center;
-                                                                                                                                                                                    font-size: 24px;
+                                                                                                                                                                                    font-size: 28px;
                                                                                                                                                                                     font-weight: 100;
                                                                                                                                                                                     top: 0px;
                                                                                                                                                                                     width: 100%;
                                                                                                                                                                                     margin-top: 100px;
+                                                                                                                                                                                    font-family: 'Fresca', sans-serif;
                                                                                                                                                                                 }
 
                                                                                                                                                                                 .parallaxWrapper {
@@ -197,6 +221,7 @@
                                                                                                                                                                                     height: 700px;
                                                                                                                                                                                     position: relative;
                                                                                                                                                                                     width: 100%;
+                                                                                                                                                                                    font-family: 'Fresca', sans-serif;
                                                                                                                                                                                     /*background-image: url(../images/citybeer.jpg);
                                                                                                                                     background-attachment: fixed;
                                                                                                                                     background-size: cover;
@@ -210,6 +235,7 @@
                                                                                                                                                                                     width: 70%;
                                                                                                                                                                                     margin-left: 15%;
                                                                                                                                                                                     margin-top: 100px;
+
                                                                                                                                                                                 }
 
                                                                                                                                                                                 .input {
@@ -241,6 +267,7 @@
                                                                                                                                                                                     border: 1px solid;
                                                                                                                                                                                     border-radius: 20px;
                                                                                                                                                                                     margin-top: 15px;
+                                                                                                                                                                                    font-family: 'Josefin Sans', sans-serif;
                                                                                                                                                                                 }
 
                                                                                                                                                                                 #submit_button:hover {
@@ -311,73 +338,6 @@
                                                                                                                                                                                     font-size: 2em;
                                                                                                                                                                                 }
 
-                                                                                                                                                                                .meter {
-                                                                                                                                                                                    height: 20px;
-                                                                                                                                                                                    display: flex;
-                                                                                                                                                                                    position: relative;
-                                                                                                                                                                                    margin: 60px 0 20px 0;
-                                                                                                                                                                                    background: #555;
-                                                                                                                                                                                    -moz-border-radius: 25px;
-                                                                                                                                                                                    -webkit-border-radius: 25px;
-                                                                                                                                                                                    border-radius: 25px;
-                                                                                                                                                                                    padding: 10px;
-                                                                                                                                                                                    -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-                                                                                                                                                                                    -moz-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-                                                                                                                                                                                    box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
-                                                                                                                                                                                }
-
-                                                                                                                                                                                .meter>span {
-                                                                                                                                                                                    display: block;
-                                                                                                                                                                                    height: 100%;
-                                                                                                                                                                                    -webkit-border-top-right-radius: 8px;
-                                                                                                                                                                                    -webkit-border-bottom-right-radius: 8px;
-                                                                                                                                                                                    -moz-border-radius-topright: 8px;
-                                                                                                                                                                                    -moz-border-radius-bottomright: 8px;
-                                                                                                                                                                                    border-top-right-radius: 8px;
-                                                                                                                                                                                    border-bottom-right-radius: 8px;
-                                                                                                                                                                                    -webkit-border-top-left-radius: 20px;
-                                                                                                                                                                                    -webkit-border-bottom-left-radius: 20px;
-                                                                                                                                                                                    -moz-border-radius-topleft: 20px;
-                                                                                                                                                                                    -moz-border-radius-bottomleft: 20px;
-                                                                                                                                                                                    border-top-left-radius: 20px;
-                                                                                                                                                                                    border-bottom-left-radius: 20px;
-                                                                                                                                                                                    background-color: rgb(43, 194, 83);
-                                                                                                                                                                                    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0, rgb(43, 194, 83)), color-stop(1, rgb(84, 240, 84)));
-                                                                                                                                                                                    background-image: -moz-linear-gradient( center bottom, rgb(43, 194, 83) 37%, rgb(84, 240, 84) 69%);
-                                                                                                                                                                                    -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-                                                                                                                                                                                    -moz-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-                                                                                                                                                                                    box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
-                                                                                                                                                                                    position: relative;
-                                                                                                                                                                                    overflow: hidden;
-                                                                                                                                                                                }
-
-                                                                                                                                                                                .meter>span:after, .animate>span>span {
-                                                                                                                                                                                    content: "";
-                                                                                                                                                                                    position: absolute;
-                                                                                                                                                                                    top: 0;
-                                                                                                                                                                                    left: 0;
-                                                                                                                                                                                    bottom: 0;
-                                                                                                                                                                                    right: 0;
-                                                                                                                                                                                    background-image: -webkit-gradient(linear, 0 0, 100% 100%, color-stop(.25, rgba(255, 255, 255, .2)), color-stop(.25, transparent), color-stop(.5, transparent), color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.75, rgba(255, 255, 255, .2)), color-stop(.75, transparent), to(transparent));
-                                                                                                                                                                                    background-image: -moz-linear-gradient( -45deg, rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
-                                                                                                                                                                                    z-index: 1;
-                                                                                                                                                                                    -webkit-background-size: 50px 50px;
-                                                                                                                                                                                    -moz-background-size: 50px 50px;
-                                                                                                                                                                                    -webkit-animation: move 2s linear infinite;
-                                                                                                                                                                                    -webkit-border-top-right-radius: 8px;
-                                                                                                                                                                                    -webkit-border-bottom-right-radius: 8px;
-                                                                                                                                                                                    -moz-border-radius-topright: 8px;
-                                                                                                                                                                                    -moz-border-radius-bottomright: 8px;
-                                                                                                                                                                                    border-top-right-radius: 8px;
-                                                                                                                                                                                    border-bottom-right-radius: 8px;
-                                                                                                                                                                                    -webkit-border-top-left-radius: 20px;
-                                                                                                                                                                                    -webkit-border-bottom-left-radius: 20px;
-                                                                                                                                                                                    -moz-border-radius-topleft: 20px;
-                                                                                                                                                                                    -moz-border-radius-bottomleft: 20px;
-                                                                                                                                                                                    border-top-left-radius: 20px;
-                                                                                                                                                                                    border-bottom-left-radius: 20px;
-                                                                                                                                                                                    overflow: hidden;
-                                                                                                                                                                                }
 
                                                                                                                                                                                 .animate>span:after {
                                                                                                                                                                                     display: none;
@@ -431,8 +391,9 @@
                                                                                                                                                                                     color: #000000;
                                                                                                                                                                                     font-size: 3.5em;
                                                                                                                                                                                     text-shadow: 1px 1px #fff;
-                                                                                                                                                                                    font-family: 'Gloria Hallelujah', cursive;
+                                                                                                                                                                                    font-family: 'Josefin Sans', sans-serif;
                                                                                                                                                                                     animation: slide-down-fade-in 1s 0.5s forwards;
+                                                                                                                                                                                    letter-spacing: .3em;
                                                                                                                                                                                 }
 
                                                                                                                                                                                 .logo {
@@ -572,7 +533,7 @@
 
                                                                                                                                                                                 .button a {
                                                                                                                                                                                     font-size: 1.55em;
-                                                                                                                                                                                    font-family: 'Gloria Hallelujah', cursive;
+                                                                                                                                                                                    font-family: 'Josefin Sans', sans-serif;
                                                                                                                                                                                     padding: 0.2em 1.6em;
                                                                                                                                                                                     text-shadow: 0px 0px 1px #FFF;
                                                                                                                                                                                     color: #000000;
