@@ -15,14 +15,15 @@
 </head>
 
 <body>
-    <!-- <div id="navcontainer">
-    <ul>
-    <li><a href="#">Home</a></li>
-    <li><a href="#">Most Selling</a></li>
-    <li><a href="#">Styles</a></li>
+    <div class="topBotomBordersOut"  id="navbar">
+        <ul >
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
 
-    </ul>
-    </div> -->
+        </ul>
+    </div>
+
     <div class="banner">
         <div class="wrap">
             <div class="logo">
@@ -38,21 +39,7 @@
                     <div class="beer">
                         <input type="text" id="tags">
                     </div>
-                    <!-- <div class="images">
-                        <ul>
-                            <li><a href="#"><img src="images/brew1.png"></a></li>
-                            <li><a href="#"><img src="images/brew2.png"></a></li>
-                            <li><a href="#"><img src="images/brew3.png"></a></li>
-                            <li><a href="#"><img src="images/brew4.png"></a></li>
-                            <li><a href="#"><img src="images/brew5.png"></a></li>
-                            <li><a href="#"><img src="images/brew6.png"></a></li>
-                            <li><a href="#"><img src="images/brew7.png"></a></li>
-                            <li><a href="#"><img src="images/brew8.png"></a></li>
-                            <li><a href="#"><img src="images/brew9.png"></a></li>
-                            <li><a href="#"><img src="images/brew10.png"></a></li>
-                            <div class="clear"> </div>
-                        </ul>
-                    </div> -->
+
                     <p id="cool">Need to cool off on these hot summer days? Here you have many delicious and refreshing beers to choose from and where you can find them. </p>
                     <div class="button">
                         <a href="info.html">Start The Fun</a>
@@ -63,8 +50,42 @@
 
 
         </div>
+        <div id="about" class="parallax">
+            <h1 class="textparallax">WELCOME TO BEER TRIPS</h1>
 
-        <div id="slider">
+        </div>
+        <div id="contact" class="wrapper">
+            <h1 class="header">Got something to let us know? We are listening :)</h1>
+
+            <div class="parallaxWrapper">
+
+
+                <form action="http://fvi-grad.com:4004/email" class="contact">
+                    <input type="text" name="dest_email" value="dairolrpichardo90@yahoo.com" style="display: none">
+                    <div class="row">
+                        <label for="name">Your name:</label><br />
+                        <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
+                    </div>
+                    <div class="row">
+                        <label for="email">Your email:</label><br />
+                        <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
+                    </div>
+                    <div class="row">
+                        <label for="message">Your message:</label><br />
+                        <textarea id="message" class="message" name="message" rows="7" cols="50"></textarea><br />
+                    </div>
+                    <input id="submit_button" type="submit" value="SEND" />
+                </form>
+
+
+
+
+
+            </div>
+
+
+        </div>
+        <!-- <div id="slider">
             <h1 class="top10">Top 10 Selling in the World</h1>
             <figure>
                 <img src="images/top10.jpg" alt>
@@ -136,10 +157,10 @@
                         <span style="width: 10%"></span>
                     </div>
 
-        </div>
+        </div> -->
 
 
-        <div id="slider2">
+        <!-- <div id="slider2">
             <h1 class="top10">What is your Style ?</h1>
             <figure>
 
@@ -149,7 +170,7 @@
                 <img src="images/beerbook2.jpg" alt>
                 <img src="images/styles4.jpg" alt>
             </figure>
-        </div>
+        </div> -->
 
 
 
