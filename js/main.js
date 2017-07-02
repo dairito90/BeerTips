@@ -22,7 +22,6 @@ function initialize() {
 
 }
 
-
 function clearOverlays() {
 
     if (markers) {
@@ -40,8 +39,6 @@ function clearOverlays() {
     }
 
 }
-
-
 
 function clearInfos() {
 
@@ -172,3 +169,11 @@ function createMarker(obj) {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+/////////////////////////////////////////////////
+// contact form
+
+function send() {
+    var link = 'mailto:dairolrpichado90@yahoo.com?subject=Message from ' + document.getElementById('email').value + '&body=' + document.getElementById('email').value;
+    window.location.href = link;
+}
